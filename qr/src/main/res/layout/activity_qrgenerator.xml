@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Qrgenerator">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+
+
+
+
+        <Spinner
+            android:id="@+id/from"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:importantForAutofill="no"
+            android:text="FROM"
+            android:inputType="text"
+            tools:ignore="HardcodedText" />
+
+        <Spinner
+            android:id="@+id/to"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:importantForAutofill="no"
+            android:text="TO"
+            android:inputType="text" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="0dp">
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPaynow"
+        android:layout_width="183dp"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        android:background="@drawable/paynow_bg"
+        android:text="Pay now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.396"
+        android:onClick="doSomthing"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_mobile_bg"
+        android:drawableStart="@drawable/ic_money"
+        android:drawablePadding="6dp"
+        android:enabled="false"
+        android:hint="Fare"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/noofpassenger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/noofpassenger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_mobile_bg"
+        android:drawableStart="@drawable/ic_money"
+        android:drawablePadding="6dp"
+        android:enabled="true"
+        android:hint="No of Passenger"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/btnPaynow"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.479"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

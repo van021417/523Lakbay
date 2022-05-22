@@ -1,0 +1,36 @@
+<!--
+  ~ Copyright (c) 2019 Adyen N.V.
+  ~
+  ~ This file is open source and available under the MIT license. See the LICENSE file for more info.
+  ~
+  ~ Created by caiof on 21/3/2019.
+  -->
+
+<resources>
+    <string name="pay_button">Zahlen</string>
+    <string name="pay_button_with_value">%s zahlen</string>
+    <string name="payment_methods_header">Zahlungsmethoden</string>
+    <string name="error_dialog_title">Fehler</string>
+    <string name="error_dialog_button">OK</string>
+    <string name="payment_failed">Fehler beim Senden der Zahlung. Bitte versuchen Sie es erneut.</string>
+    <string name="action_failed">Bei der Verarbeitung Ihrer Zahlung ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.</string>
+    <string name="component_error">Es ist etwas schief gegangen.</string>
+    <string name="time_out_error">Zeitüberschreitung bei Anfrage. Bitte versuchen Sie es erneut.</string>
+    <string name="store_payment_methods_header">Ihre Zahlungsmethoden</string>
+    <string name="other_payment_methods">Andere Zahlungsmethoden</string>
+    <string name="continue_button">Weiter</string>
+    <string name="change_payment_method">Zahlungsmethode wechseln</string>
+    <string name="checkout_giftcard_redeem_button">Einlösen</string>
+    <string name="checkout_giftcard_error_zero_balance">Auf dieser Geschenkkarte ist kein Guthaben vorhanden</string>
+    <string name="checkout_giftcard_error_currency">Geschenkkarten sind nur in der Währung gültig, in der sie ausgestellt wurden</string>
+    <string name="checkout_giftcard_remaining_balance_text">Es verbleibt ein Restbetrag von %s</string>
+    <string name="checkout_giftcard_pay_remaining_amount">Wählen Sie eine Zahlungsmethode für den verbleibenden Betrag von %s aus</string>
+    <string name="checkout_giftcard_payment_methods_header">Geschenkgutschein hinzugefügt</string>
+    <string name="checkout_giftcard_remove_button">Entfernen</string>
+    <string name="checkout_giftcard_max_transaction_limit">Der zulässige Höchstbetrag pro Transaktion für diese Geschenkkarte ist %s</string>
+    <string name="checkout_giftcard_remove_gift_cards_title">Entfernen der Karte bestätigen</string>
+    <string name="checkout_giftcard_remove_gift_cards_body">Hinzugefügte Geschenkgutscheine entfernen?</string>
+    <string name="checkout_giftcard_remove_gift_cards_positive_button">Ja, entfernen</string>
+    <string name="checkout_giftcard_remove_gift_cards_negative_button">Abbrechen</string>
+    <string name="checkout_remove_stored_payment_method_body">Gespeicherte Zahlungsmethode entfernen</string>
+</resources>

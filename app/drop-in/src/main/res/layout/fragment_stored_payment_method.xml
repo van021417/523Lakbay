@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Adyen N.V.
+  ~
+  ~ This file is open source and available under the MIT license. See the LICENSE file for more info.
+  ~
+  ~ Created by caiof on 1/12/2020.
+  -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/standard_half_margin"
+    android:orientation="vertical"
+    tools:context=".ui.stored.PreselectedStoredPaymentMethodFragment">
+
+    <include
+        android:id="@+id/bottom_sheet_indicator"
+        layout="@layout/bottom_sheet_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include
+        android:id="@+id/payment_methods_list_header"
+        layout="@layout/payment_methods_list_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/store_payment_methods_header"/>
+
+    <include
+        android:id="@+id/stored_payment_method_item"
+        layout="@layout/removable_payment_methods_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/payButton"
+        style="@style/AdyenCheckout.Button.Colored"
+        android:layout_width="match_parent"
+        android:text="@string/continue_button"/>
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/change_payment_method_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/AdyenCheckout.SecondaryFlatButton"
+        android:text="@string/change_payment_method" />
+</LinearLayout>

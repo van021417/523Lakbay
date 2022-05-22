@@ -1,0 +1,36 @@
+<!--
+  ~ Copyright (c) 2019 Adyen N.V.
+  ~
+  ~ This file is open source and available under the MIT license. See the LICENSE file for more info.
+  ~
+  ~ Created by caiof on 21/3/2019.
+  -->
+
+<resources>
+    <string name="pay_button">Betaal</string>
+    <string name="pay_button_with_value">%s betalen</string>
+    <string name="payment_methods_header">Betaalmethodes</string>
+    <string name="error_dialog_title">Fout</string>
+    <string name="error_dialog_button">Oké</string>
+    <string name="payment_failed">Fout bij het verzenden van betaling. Probeer het opnieuw.</string>
+    <string name="action_failed">Er is een fout opgetreden bij het verwerken van uw betaling. Probeer het later opnieuw.</string>
+    <string name="component_error">Er is iets misgegaan.</string>
+    <string name="time_out_error">Verzoek is verlopen. Probeer het opnieuw.</string>
+    <string name="store_payment_methods_header">Opgeslagen betaalmethodes</string>
+    <string name="other_payment_methods">Alle betaalmethodes</string>
+    <string name="continue_button">Doorgaan</string>
+    <string name="change_payment_method">Betalingsmethode wijzigen</string>
+    <string name="checkout_giftcard_redeem_button">Inwisselen</string>
+    <string name="checkout_giftcard_error_zero_balance">Deze cadeaukaart heeft geen saldo</string>
+    <string name="checkout_giftcard_error_currency">Cadeaukaarten zijn alleen geldig in de valuta waarin ze zijn uitgegeven</string>
+    <string name="checkout_giftcard_remaining_balance_text">Het resterende saldo is %s</string>
+    <string name="checkout_giftcard_pay_remaining_amount">Selecteer betaalmethode voor de resterende %s</string>
+    <string name="checkout_giftcard_payment_methods_header">Cadeaukaart toegevoegd</string>
+    <string name="checkout_giftcard_remove_button">Verwijderen</string>
+    <string name="checkout_giftcard_max_transaction_limit">Max. %s toegestaan per transactie met deze cadeaubon</string>
+    <string name="checkout_giftcard_remove_gift_cards_title">Verwijdering van kaart bevestigen</string>
+    <string name="checkout_giftcard_remove_gift_cards_body">Toegevoegde cadeaukaarten verwijderen?</string>
+    <string name="checkout_giftcard_remove_gift_cards_positive_button">Ja, verwijderen</string>
+    <string name="checkout_giftcard_remove_gift_cards_negative_button">Annuleren</string>
+    <string name="checkout_remove_stored_payment_method_body">Opgeslagen betalingsmethode verwijderen</string>
+</resources>

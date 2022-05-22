@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainDestination">
+
+    <EditText
+        android:id="@+id/fromLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FROM"
+        android:padding="12dp"
+        />
+
+    <EditText
+        android:id="@+id/toLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TO"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/noofpassenger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_mobile_bg"
+        android:drawableStart="@drawable/ic_money"
+        android:drawablePadding="6dp"
+        android:enabled="true"
+        android:hint="No of Passenger"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/btnPaynow"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.479"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="383dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="383dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="383dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        />
+    <Button
+        android:id="@+id/btnPaynow"
+        android:layout_width="183dp"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        android:background="@drawable/paynow_bg"
+        android:text="Pay now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.396"
+
+        />
+    <Button
+        android:id="@+id/ShowFare"
+        android:layout_width="183dp"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        android:background="@drawable/paynow_bg"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.396"
+
+        />
+
+
+
+</LinearLayout>

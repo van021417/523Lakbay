@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Adyen N.V.
+  ~
+  ~ This file is open source and available under the MIT license. See the LICENSE file for more info.
+  ~
+  ~ Created by caiof on 26/3/2019.
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Override 3DS2 Theme to match Checkout theme -->
+    <style name="ThreeDS2Theme" parent="AdyenCheckout" tools:ignore="PrivateResource" />
+
+    <style name="AdyenCheckout.BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_bottom_sheet_dialog_fragment</item>
+    </style>
+
+    <style name="AdyenCheckout.BottomSheetIndicator" >
+        <item name="android:layout_width">@dimen/indicator_width</item>
+        <item name="android:layout_height">@dimen/indicator_height</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/standard_quarter_margin</item>
+        <item name="android:layout_marginBottom">@dimen/standard_half_margin</item>
+        <item name="android:background">@drawable/bottom_sheet_indicator</item>
+    </style>
+
+    <style name="AdyenCheckout.BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/AdyenCheckout.BottomSheet</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="AdyenCheckout.BottomSheetDialogTheme" parent="AdyenCheckout.BaseBottomSheetDialog" />
+
+    <style name="AdyenCheckout.TextAppearance.HeaderTitle">
+        <item name="android:paddingStart">@dimen/standard_margin</item>
+        <item name="android:paddingLeft">@dimen/standard_margin</item>
+        <item name="android:paddingTop">@dimen/standard_half_margin</item>
+        <item name="android:paddingBottom">@dimen/standard_half_margin</item>
+        <item name="android:paddingEnd">@dimen/standard_margin</item>
+        <item name="android:paddingRight">@dimen/standard_margin</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AdyenCheckout.TextAppearance.HeaderTitle.Card" parent="AdyenCheckout.TextAppearance.HeaderTitle">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+    </style>
+
+    <style name="AdyenCheckout.TextAppearance.ButtonSubtext">
+        <item name="android:paddingStart">@dimen/standard_margin</item>
+        <item name="android:paddingEnd">@dimen/standard_margin</item>
+        <item name="android:textColor">@color/label_color</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AdyenCheckout.TextAppearance.NoteText">
+        <item name="android:paddingStart">@dimen/standard_margin</item>
+        <item name="android:paddingTop">@dimen/standard_half_margin</item>
+        <item name="android:paddingBottom">@dimen/standard_half_margin</item>
+        <item name="android:paddingEnd">@dimen/standard_margin</item>
+        <item name="android:textColor">@color/textColorNote</item>
+        <item name="android:background">@drawable/background_payment_methods_note</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginStart">@dimen/standard_margin</item>
+        <item name="android:layout_marginEnd">@dimen/standard_margin</item>
+    </style>
+
+    <style name="AdyenCheckout.TextAppearance.HeaderAction">
+        <item name="android:paddingStart">@dimen/standard_margin</item>
+        <item name="android:paddingLeft">@dimen/standard_margin</item>
+        <item name="android:paddingTop">@dimen/standard_half_margin</item>
+        <item name="android:paddingBottom">@dimen/standard_half_margin</item>
+        <item name="android:paddingEnd">@dimen/standard_margin</item>
+        <item name="android:paddingRight">@dimen/standard_margin</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>
